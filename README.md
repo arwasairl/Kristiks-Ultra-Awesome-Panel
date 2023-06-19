@@ -13,3 +13,6 @@ A panel with various payloads to run on your computer. Requires Qt 6.
 * MBR Overwrite (VM only feature)
 * Ejects C: drive
 * Replace icons
+
+# Notes
+The release build of Kristik's UAP uses the Enigma Protector with no code signing. This may give a Wacatac virus detection by your antivirus. Please build from source if you do not feel comfortable running the release builds.
