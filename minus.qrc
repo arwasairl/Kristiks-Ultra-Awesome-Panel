@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/assets">
+        <file>MINUS.png</file>
+        <file>X.png</file>
+        <file>Untitled-2.png</file>
+        <file>bg.png</file>
+        <file>icon.ico</file>
+        <file>cover.png</file>
+        <file>828580_screenshots_20180504011307.jpg</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>Indian_Scam_Grind.mp3</file>
+    </qresource>
+</RCC>

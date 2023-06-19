@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Kristik's Ultra Awesome Panel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/new/assets/icon.ico</normaloff>:/new/assets/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(35, 35, 35);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>4</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0 y1:0, x2:1 y2:0, stop:0 rgb(255, 0, 4), stop:0.15 rgb(255, 0, 242), stop:0.30 rgb(8, 0, 255), stop:0.45 rgb(0, 255, 255), stop:0.60 rgb(0, 255, 60), stop:0.75 rgb(230, 255, 0), stop:0.90 rgb(255, 128, 0));
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aboutButton">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>5</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+	border: none;
+	background: transparent;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/new/assets/Untitled-2.png</normaloff>:/new/assets/Untitled-2.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="destruct">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>110</y>
+      <width>251</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>Destructive Payloads</string>
+    </property>
+    <widget class="QPushButton" name="bsodButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Blue Screens the computer by invoking NtRaiseHardError. This will not &amp;quot;destroy&amp;quot; your computer, but it isn't very good for your RAM.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>BSOD</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>30</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Many payloads require administrative access.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="syswowButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will delete ALL 32-bit Windows libraries, DLLs, and programs.&lt;/p&gt;&lt;p&gt;Requires Administrator access.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete SysWOW64</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sys32Button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will delete ALL 64-bit Windows libraries, DLLs, and programs. &lt;/p&gt;&lt;p&gt;Requires Administrator access.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete System32</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mbrButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will overwrite your Master Boot Record with NULL values (0). Do not press this unless you want to render your computer unbootable. Computers using UEFI boot modes (like GPTs) will not be affected with an MBR overwrite.&lt;/p&gt;&lt;p&gt;Requires Administrator access.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>MBR Overwrite</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nukeButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will attempt to eject your C:\ Drive. This will ALSO delete your MBR. Only tested with SATA drives and may not be compatible with NVMe.&lt;/p&gt;&lt;p&gt;Requires Administrator access.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Eject C: Drive</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="repiconButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>140</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will attempt to repalce all standard Windows icons to the glorious Kristik Lal. This is NOT reversable, so please be wise about your choice!&lt;/p&gt;&lt;p&gt;Requires Administrator access.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Replace Icons</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>581</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>34</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Kristik's Ultra Awesome Panel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titleLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>39</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Verison 0.0.1.1112322a</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="funny">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>261</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>Non-Destructive Payloads</string>
+    </property>
+    <widget class="QPushButton" name="rapButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>241</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Plays MC Krab's newest hot single, Indian Scam Grind. Press once to play, press again to stop.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Play Kristik Rap</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="siteButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>241</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Opens a random website using your browser.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Open a website</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ranfileButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>241</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Extracts a random file onto your desktop.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Random file</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>10</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="spamButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>241</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This will display a bunch of message boxes until the program crashes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Message Spam</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>10</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>30</y>
+       <width>241</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>These do not require administrator access.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="auto_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>261</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>Auto mode</string>
+    </property>
+    <widget class="QPushButton" name="auNDesButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>241</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Automates through all the destructive payloads. Requires Administrator access.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-color: rgb(40, 40, 40);
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+QPushButton::hover {
+	background-color: rgb(109, 109, 109);
+}
+
+QPushButton::pressed {
+	background-color: rgb(49, 49, 49);
+}
+
+QToolTip {
+	color: #ffffff;
+	background-color: rgb(49, 49, 49); 
+	border: 1px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Release the Kraken</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="note">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>30</y>
+       <width>251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Auto mode requires administrator access.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="waifu">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>110</y>
+      <width>431</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>Kristik's Waifu</string>
+    </property>
+    <widget class="QLabel" name="waifuImg">
+     <property name="geometry">
+      <rect>
+       <x>-680</x>
+       <y>30</y>
+       <width>1181</width>
+       <height>711</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/new/assets/828580_screenshots_20180504011307.jpg</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>540</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(208, 208, 208);</string>
+    </property>
+    <property name="text">
+     <string>Hover your cursor over buttons for more information about what the feature does.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>580</y>
+      <width>791</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(208, 208, 208);</string>
+    </property>
+    <property name="text">
+     <string>&quot;Your bitches so bad they belong in a vet shelter&quot;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>630</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(208, 208, 208);</string>
+    </property>
+    <property name="text">
+     <string>-Kristik Lal 2022</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
